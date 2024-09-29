@@ -1,0 +1,12 @@
+rules:
+  - name: 规则名
+    reference:
+      - name: 第三方 rpc 名
+        url: rpc 地址
+    target:
+      - name: 节点名
+        url: 节点地址
+        # 最大可容忍 区块高度差
+        maxDeviation: 1
+    # 触发规则
+    action: restart
